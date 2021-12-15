@@ -2213,11 +2213,8 @@ ol {
   text-align: center;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .hero-area .hero-content .button {
-    margin-top: 10px !important;
-    width: 100%;
-  }
+@media (max-width: 768px) {
+
 
 .mp22{
   color: #3813c2;
@@ -2225,6 +2222,13 @@ ol {
   font-weight: 700;
   text-align: center;
 }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-area .hero-content .button {
+    margin-top: 10px !important;
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -3837,6 +3841,13 @@ margin: 0 0 800px 0;
   justify-content: center;
   border: 50px;
 }
+@media (max-width: 700px) {
+
+  .slider {
+    max-width: 300px ;
+  }
+  
+}
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -3878,4 +3889,69 @@ margin: 0 0 800px 0;
 .slider .slide {
   height: 100px;
   width: 250px;
+}
+
+
+
+.webs {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.webs p {
+  margin: 0 0 13px 0;
+}
+
+.webs a {
+  color: #fff;
+}
+
+
+.webs .container {
+  width: 95%;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.webs .episode {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  position: relative;
+}
+
+.webs .episode__number {
+  font-size: 10vw;
+  font-weight: 600;
+  padding: 10px 0;
+  top: 0;
+  text-align: center;
+  transition: all 0.2s ease-in;
+}
+
+.webs .episode__content {
+  border-top: 2px solid rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 10px;
+  padding: 15px 0;
+}
+
+.webs .episode__content .title {
+  font-weight: 600
+}
+
+.webs .episode__content .story {
+  line-height: 26px;
+}
+
+@media (max-width: 600px) {
+  .webs .episode__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .webs.episode__content .story {
+    font-size: 15px;
+  }
 }
