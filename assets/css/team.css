@@ -1,27 +1,30 @@
+
+.at-section__title1 {
+  margin: -300px 0 70px;
+  color: #000;
+  font-family: "Roboto", sans-serif; 
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 4.625rem;
+  text-align: center;
+}  
+.at-section__title2 {
+  margin: -100px 0 70px;
+  color: #000;
+  font-family: "Roboto", sans-serif; 
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 4.625rem;
+  text-align: center;
+}
+
 .at-section__title {
   margin: 0 0 70px;
   color: #000;
   font-family: "Roboto", sans-serif;
   font-size: 3.5rem;
-  font-weight: 300;
-  line-height: 2.625rem;
-  text-align: center;
-}
-.at-section__title1 {
-  margin: -300px 0 70px;
-  color: #000;
-  font-family: "Roboto", sans-serif;
-  font-size: 3.5rem;
-  font-weight: 300;
-  line-height: 2.625rem;
-  text-align: center;
-}  .at-section__title2 {
-  margin: -100px 0 70px;
-  color: #000;
-  font-family: "Roboto", sans-serif;
-  font-size: 3.5rem;
-  font-weight: 300;
-  line-height: 2.625rem;
+  font-weight: 500;
+  line-height: 4.625rem;
   text-align: center;
 }
 .at-grid {
@@ -39,8 +42,8 @@
 .at-column {
   z-index: 0;
   position: relative;
-  background: #FFF;
-  box-shadow: 0 0 0 1px #E2E9ED;
+  background: #fff;
+  box-shadow: 0 0 0 1px #e2e9ed;
   padding: 10px;
   box-sizing: border-box;
   transition: box-shadow 0.2s ease, transform 0.2s ease, z-index 0s 0.2s ease;
@@ -60,6 +63,7 @@
   margin: 16px 0 0;
   opacity: 1;
 }
+
 @media (max-width: 800px) {
   .at-column {
     width: 50% !important;
@@ -76,6 +80,7 @@
     flex-basis: 100% !important;
   }
 }
+
 .at-user {
   position: absolute;
   top: 50%;
@@ -85,9 +90,9 @@
   text-align: center;
 }
 .at-user__avatar {
-  width: 98px;
-  height: 98px;
-  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
   margin: 0 auto 20px;
   overflow: hidden;
 }
@@ -96,25 +101,29 @@
   width: 100%;
   max-width: 100%;
 }
+
 .at-user__name {
   color: #313435;
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 500;
   line-height: 2.625rem;
 }
+
 .at-user__title {
   color: #6F808A;
   font-family: "Roboto", sans-serif;
   font-size: 0.875rem;
   line-height: 2.375rem;
 }
+
+
+/**
 .at-social {
   margin: 0 0 -18px;
   opacity: 0;
   text-align: center;
   justify-content: center;
-  
   transition: margin 0.2s ease, opacity 0.2s ease;
 }
 .at-social__item {
@@ -126,14 +135,12 @@
 }
 .at-social__item a {
   display: block;
-
   text-align: center;
   justify-content: center;
 }
 .at-social__item svg {
   fill: #515F65;
   display: block;
-
   text-align: center;
   justify-content: center;
   height: 18px;
@@ -145,8 +152,70 @@
   text-align: center;
   justify-content: center;
 }
+*/
 
 
+.at-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #fff;
+  border: 1px solid #e2e9ed;
+}
+.at-grid[data-column="1"] .at-column {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  flex-basis: 100%;
+}
+.at-grid[data-column="2"] .at-column {
+  width: 50%;
+  max-width: 50%;
+  min-width: 50%;
+  flex-basis: 50%;
+}
+.at-grid[data-column="3"] .at-column {
+  width: 33.3333333333%;
+  max-width: 33.3333333333%;
+  min-width: 33.3333333333%;
+  flex-basis: 33.3333333333%;
+}
+.at-grid[data-column="4"] .at-column {
+  width: 25%;
+  max-width: 25%;
+  min-width: 25%;
+  flex-basis: 25%;
+}
+.at-grid[data-column="5"] .at-column {
+  width: 20%;
+  max-width: 20%;
+  min-width: 20%;
+  flex-basis: 20%;
+}
+.at-grid[data-column="6"] .at-column {
+  width: 16.6666666667%;
+  max-width: 16.6666666667%;
+  min-width: 16.6666666667%;
+  flex-basis: 16.6666666667%;
+}
+.at-grid[data-column="7"] .at-column {
+  width: 14.2857142857%;
+  max-width: 14.2857142857%;
+  min-width: 14.2857142857%;
+  flex-basis: 14.2857142857%;
+}
+.at-grid[data-column="8"] .at-column {
+  width: 12.5%;
+  max-width: 12.5%;
+  min-width: 12.5%;
+  flex-basis: 12.5%;
+}
+.at-grid[data-column="9"] .at-column {
+  width: 11.1111111111%;
+  max-width: 11.1111111111%;
+  min-width: 11.1111111111%;
+  flex-basis: 11.1111111111%;
+}
 .teamcontainer {
   width: 100%;
   margin: 50px auto;

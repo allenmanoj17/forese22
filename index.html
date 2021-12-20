@@ -92,16 +92,16 @@
 
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 offset-lg-3 col-md-12 col-12">
+                <div class="col-lg-6 offset-lg-0 col-md-12 col-12">
                     <div class="hero-content">
+                       
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">FORum for Economic Studies by Engineers (FORESE)
+                        </h2>
                         <h5 class="wow zoomIn" data-wow-delay=".2s"><i class="lni lni-map-marker"></i> Sri Venkateswara
                             College of Engineering,
                             Sriperumbudur</h5>
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">FORum for Economic Studies by Engineers (FORESE)
-                        </h2>
-                        
                         <div class="button wow fadeInUp" data-wow-delay=".8s">
-                            <a href="about-us.html" class="btn ">Get to know More</a>
+                            <a href="about-us.html" class="btn ">Know More</a>
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
                         </div>
                         <div class="box-content">
                             <div class="box">
-                                <h1 id="days">000</h1>
+                                <h1 id="days">00</h1>
                                 <h2 id="daystxt">Days</h2>
                             </div>
                             <div class="box">
@@ -153,7 +153,9 @@
                         <h3 class="wow zoomIn" data-wow-delay=".2s">FORESE</h3>
                         <h2 class="wow fadeInUp" data-wow-delay=".4s">About Us</h2>
                         <p class="wow fadeInUp" data-wow-delay=".6s">
-                            FORESE is a student-run forum and an extension of the Placement cell. It empowers students and equips them with essential soft skills such as team management, interpersonal, and leadership skills useful for their careers.
+                            FORESE is a student-run forum and an extension of the Placement cell. It empowers students
+                            and equips them with essential soft skills such as team management, interpersonal, and
+                            leadership skills useful for their careers.
                         </p>
                     </div>
                 </div>
@@ -170,7 +172,7 @@
                         </div>
                         <h3>Networking</h3>
                         <p>
-                            Provides platform to interact with executives and professionals. 
+                            Provides platform to interact with executives and professionals
                         </p>
                     </div>
                     <!-- End Single Feature -->
@@ -185,7 +187,7 @@
                             <i class="lni lni-users"></i>
                         </div>
                         <h3>Soft skills development</h3>
-                        <p>Improves communication, build character traits & enhance potential 
+                        <p>Improves communication, build character traits & enhance potential
                         </p>
                     </div>
                     <!-- End Single Feature -->
@@ -218,7 +220,7 @@
                         </div>
                         <h3>Community</h3>
                         <p>
-                            Like minded individuals helping students to be industry ready
+                            Like minded people helping students be industry ready
                         </p>
                     </div>
                     <!-- End Single Feature -->
@@ -233,7 +235,7 @@
                             <i class="lni lni-cup"></i>
                         </div>
                         <h3>Interpersonal skills</h3>
-                        <p>Broad range of communication aspects & strategies for placements 
+                        <p>Broad range of communication aspects & strategies for placements
                         </p>
                     </div>
                     <!-- End Single Feature -->
@@ -283,7 +285,7 @@
                         </div>
                         <!-- End Table Head -->
                         <div class="button">
-                            <a href="fored.html" class="btn">Get to know more</a>
+                            <a href="fored.html" class="btn">Know More</a>
                         </div>
                     </div>
                     <!-- End Single Table-->
@@ -300,7 +302,7 @@
                         </div>
                         <!-- End Table Head -->
                         <div class="button">
-                            <a href="mockplacements.html" class="btn btn-alt">Get to know more</a>
+                            <a href="mockplacements.html" class="btn btn-alt">Know More</a>
                         </div>
                     </div>
                     <!-- End Single Table-->
@@ -317,7 +319,7 @@
                         </div>
                         <!-- End Table Head -->
                         <div class="button">
-                            <a href="webinars.html" class="btn">Get to know more</a>
+                            <a href="webinars.html" class="btn">Know More</a>
                         </div>
                     </div>
                     <!-- End Single Table-->
@@ -357,7 +359,7 @@
                             </div>
                             <!-- End Single Widget -->
                         </div>
-                       
+
                         <div class="col-lg-2 col-md-6 col-12">
                             <!-- Single Widget -->
                             <div class="single-footer f-link">
@@ -365,6 +367,7 @@
                                 <ul>
                                     <li><a href="about-us.html">About Us</a></li>
                                     <li><a href="team.html">Team</a></li>
+                                    <li><a href="mockplacements.html">Mock Placements</a></li>
                                     <li><a href="aptitude&gd.html">Aptitude & GD</a></li>
                                     <li><a href="contact.html">Contact Us</a></li>
                                 </ul>
@@ -428,7 +431,7 @@
             let minutes = Math.floor(diff % (1000 * 60 * 60) / (1000 * 60));
             let seconds = Math.floor(diff % (1000 * 60) / 1000);
 
-            days <= 99 ? days = `0${days}` : days;
+            days <= 99 ? days = `${days}` : days;
             days <= 9 ? days = `00${days}` : days;
             hours <= 9 ? hours = `0${hours}` : hours;
             minutes <= 9 ? minutes = `0${minutes}` : minutes;
@@ -438,7 +441,6 @@
             document.querySelector('#hours').textContent = hours;
             document.querySelector('#minutes').textContent = minutes;
             document.querySelector('#seconds').textContent = seconds;
-
         }
         timer();
         setInterval(timer, 1000);
