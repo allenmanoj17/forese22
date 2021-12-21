@@ -2085,7 +2085,6 @@ ol {
 /*======================================
     Hero Area CSS
 
-    background-image: url("../images/hero/hero1.png");
 ========================================*/
 .hero-area {
   position: relative;
@@ -2116,12 +2115,59 @@ ol {
   text-align: left;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .hero-area .hero-content {
     padding: 0;
   }
   .hero-area{
-    background-image: url("../images/hero/undraw_working_re_ddwy.svg");
+    background-position: right;
+    background-size: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-area .hero-content {
+    margin-left: -130px;
+    text-align: left;
+  }
+  .hero-area{
+    background-position: right;
+    background-size: 350px;
+  }
+}
+
+@media (max-width: 426px) {
+  .hero-area .hero-content {
+    margin: 30px;
+    text-align: center;
+  }
+  .hero-area .hero-content h2{
+    padding-bottom: 250px;
+  }
+  
+  .hero-area .button{
+  padding-top: 5px;
+  }
+  .hero-area{
+    background-position: center;
+    background-size: 350px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .hero-area .hero-content {
+    margin: 25px;
+    text-align: center;
+  }
+  .hero-area .hero-content h2{
+    padding-bottom: 160px;
+  }
+  
+  .hero-area .button{
+  padding-top: 5px;
+  }
+  .hero-area{
     background-position: center;
     background-size: 350px;
   }
@@ -2139,7 +2185,7 @@ ol {
   display: block;
   font-size: 16px;
   display: inline-block;
-  background: #05060752;
+  background: rgb(120, 129, 248);
   padding: 13px 22px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 0px 10px #00000005;
